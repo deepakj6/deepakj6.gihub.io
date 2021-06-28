@@ -6,10 +6,10 @@ entries:
     created: "2021-06-28T09:16:10.417508795+01:00"
     dependencies:
     - name: pages-api
-      repository: http://localhost:8080
+      repository: https://github.com/deepakj6/deepakj6.gihub.io/helm-charts
       version: 1.x.x
     - name: mysql
-      repository: http://localhost:8080
+      repository: http://github.com/deepakj6/deepakj6.gihub.io/helm-charts
       version: 1.x.x
     description: A Helm chart for Pages Application
     digest: db625e31282965f91de4908b66869f9c060b940e69b3d9d654d89d92363e01db
