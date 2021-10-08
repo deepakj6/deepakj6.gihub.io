@@ -1,21 +1,39 @@
 apiVersion: v1
 entries:
+  category-microservice:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2021-10-08T14:03:33.266794237+01:00"
+    dependencies:
+    - name: category
+      repository: https://deepakj6.github.io/
+      version: x.x.x
+    - name: mongo
+      repository: https://deepakj6.github.io/
+      version: x.x.x
+    description: A Helm chart for category Application
+    digest: b0fc0dbefc30e9528c85e93004846153589fb7ce7adeaf473e410fde25d14d4c
+    name: category-microservice
+    type: application
+    urls:
+    - category-microservice-1.0.0.tgz
+    version: 1.0.0
   pages:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2021-06-28T09:16:10.417508795+01:00"
+    created: "2021-10-08T14:03:33.268371608+01:00"
     dependencies:
     - name: pages-api
-      repository: https://github.com/deepakj6/deepakj6.gihub.io
+      repository: https://deepakj6.github.io/
       version: 1.x.x
     - name: mysql
-      repository: http://github.com/deepakj6/deepakj6.gihub.io
+      repository: https://deepakj6.github.io/
       version: 1.x.x
     description: A Helm chart for Pages Application
-    digest: db625e31282965f91de4908b66869f9c060b940e69b3d9d654d89d92363e01db
+    digest: 088239f32bb3c0915c2f8446baf446bb42268c73c84e93e29eefe20b7e768ece
     name: pages
     type: application
     urls:
     - pages-1.0.0.tgz
     version: 1.0.0
-generated: "2021-06-28T09:16:10.416206494+01:00"
+generated: "2021-10-08T14:03:33.265318198+01:00"

@@ -1,0 +1,43 @@
+config:
+  spring_datasource_username: root
+
+deployment:
+  containerPort: 27017
+
+secrets:
+  SDP: cGFzc3dvcmQ=
+
+service:
+  port: 27017
+  type: ClusterIP
+  protocol: TCP
+  targetPort: 27017
+
+imagePullPolicy: IfNotPresent
+image:
+  repository: mongo
+  tag: "latest"
+
+env:
+  MYSQL_SERVICE_HOST: mysql
+  MONGO_SERVICE_PORT: 27017
+  MYSQL_DATABASE: pages
+
+volumeMounts:
+  mountPath: /data/db
+
+pv:
+  capacity:
+    storage: 1Gi
+  accessMode: ReadWriteOnce
+  hostPath:
+    path: "/data/db/[replace-this-with-your-namespace]"
+pvc:
+  resources:
+    requests:
+      storage: 256Mi
+
+storageClass:
+  provisioner: k8s.io/minikube-hostpath
+  reclaimPolicy: Retain
+  volumeBindingMode: Immediate

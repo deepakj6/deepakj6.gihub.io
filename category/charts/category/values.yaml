@@ -1,0 +1,20 @@
+deployment:
+  containerPort: 8080
+service:
+  port: 8080
+  type: NodePort
+  protocol: TCP
+  targetPort: 8080
+
+imagePullPolicy: IfNotPresent
+image:
+  repository: dellcloud/category
+  tag: distributed
+
+
+config:
+  PAGE_CONTENT: Green-Pages coming from Yellow-World!
+
+env:
+  SPRING_DATA_MONGODB_URI: mongodb://mongo:27017/dev
+
