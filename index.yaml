@@ -31,7 +31,7 @@ entries:
       version: 1.x.x
     description: A Helm chart for Pages Application
     digest: 088239f32bb3c0915c2f8446baf446bb42268c73c84e93e29eefe20b7e768ece
-    name: pages
+    name: pages-microservice
     type: application
     urls:
     - pages-1.0.0.tgz
